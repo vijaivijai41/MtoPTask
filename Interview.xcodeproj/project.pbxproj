@@ -17,6 +17,12 @@
 		E252CFFD27BF501B00ABFEAF /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252CFFC27BF501B00ABFEAF /* InterviewTests.swift */; };
 		E252D00727BF501B00ABFEAF /* InterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252D00627BF501B00ABFEAF /* InterviewUITests.swift */; };
 		E252D00927BF501B00ABFEAF /* InterviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252D00827BF501B00ABFEAF /* InterviewUITestsLaunchTests.swift */; };
+		E289877227C1FA3300FFA4E1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289877127C1FA3300FFA4E1 /* ViewModel.swift */; };
+		E289877627C1FB6D00FFA4E1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289877527C1FB6D00FFA4E1 /* UIViewController+Extension.swift */; };
+		E289877F27C1FFED00FFA4E1 /* MtoPInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E289877D27C1FDDA00FFA4E1 /* MtoPInterview.framework */; platformFilter = ios; };
+		E289878027C1FFED00FFA4E1 /* MtoPInterview.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E289877D27C1FDDA00FFA4E1 /* MtoPInterview.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E289878427C2004100FFA4E1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289878327C2004100FFA4E1 /* InfoViewController.swift */; };
+		E289878627C200F800FFA4E1 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289878527C200F800FFA4E1 /* InfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E252D01927BF502800ABFEAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E289878027C1FFED00FFA4E1 /* MtoPInterview.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E252CFDF27BF501A00ABFEAF /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E252CFE227BF501A00ABFEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +71,11 @@
 		E252D00227BF501B00ABFEAF /* InterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E252D00627BF501B00ABFEAF /* InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITests.swift; sourceTree = "<group>"; };
 		E252D00827BF501B00ABFEAF /* InterviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E289877127C1FA3300FFA4E1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E289877527C1FB6D00FFA4E1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E289877D27C1FDDA00FFA4E1 /* MtoPInterview.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MtoPInterview.framework; sourceTree = "<group>"; };
+		E289878327C2004100FFA4E1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		E289878527C200F800FFA4E1 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E289877F27C1FFED00FFA4E1 /* MtoPInterview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,7 @@
 		E252CFD627BF501900ABFEAF = {
 			isa = PBXGroup;
 			children = (
+				E289877D27C1FDDA00FFA4E1 /* MtoPInterview.framework */,
 				E252CFE127BF501A00ABFEAF /* Interview */,
 				E252CFFB27BF501B00ABFEAF /* InterviewTests */,
 				E252D00527BF501B00ABFEAF /* InterviewUITests */,
@@ -101,9 +128,10 @@
 		E252CFE127BF501A00ABFEAF /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				E289877427C1FB5300FFA4E1 /* Scene */,
+				E289877327C1FB4A00FFA4E1 /* Extension */,
 				E252CFE227BF501A00ABFEAF /* AppDelegate.swift */,
 				E252CFE427BF501A00ABFEAF /* SceneDelegate.swift */,
-				E252CFE627BF501A00ABFEAF /* ViewController.swift */,
 				E252CFE827BF501A00ABFEAF /* Main.storyboard */,
 				E252CFEE27BF501B00ABFEAF /* Assets.xcassets */,
 				E252CFF027BF501B00ABFEAF /* LaunchScreen.storyboard */,
@@ -130,6 +158,41 @@
 			path = InterviewUITests;
 			sourceTree = "<group>";
 		};
+		E289877327C1FB4A00FFA4E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E289877527C1FB6D00FFA4E1 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E289877427C1FB5300FFA4E1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E289878227C2002E00FFA4E1 /* Detail */,
+				E289878127C2002800FFA4E1 /* List */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E289878127C2002800FFA4E1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E289877127C1FA3300FFA4E1 /* ViewModel.swift */,
+				E252CFE627BF501A00ABFEAF /* ViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E289878227C2002E00FFA4E1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E289878327C2004100FFA4E1 /* InfoViewController.swift */,
+				E289878527C200F800FFA4E1 /* InfoViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +203,7 @@
 				E252CFDB27BF501A00ABFEAF /* Sources */,
 				E252CFDC27BF501A00ABFEAF /* Frameworks */,
 				E252CFDD27BF501A00ABFEAF /* Resources */,
+				E252D01927BF502800ABFEAF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E289877627C1FB6D00FFA4E1 /* UIViewController+Extension.swift in Sources */,
+				E289877227C1FA3300FFA4E1 /* ViewModel.swift in Sources */,
 				E252CFE727BF501A00ABFEAF /* ViewController.swift in Sources */,
+				E289878427C2004100FFA4E1 /* InfoViewController.swift in Sources */,
 				E252CFE327BF501A00ABFEAF /* AppDelegate.swift in Sources */,
 				E252CFE527BF501A00ABFEAF /* SceneDelegate.swift in Sources */,
+				E289878627C200F800FFA4E1 /* InfoViewModel.swift in Sources */,
 				E252CFED27BF501A00ABFEAF /* Interview.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +497,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -444,6 +513,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LAPWRR9UHW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Interview",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Interview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,6 +546,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LAPWRR9UHW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Interview",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Interview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

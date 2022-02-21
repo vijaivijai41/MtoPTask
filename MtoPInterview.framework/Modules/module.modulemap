@@ -1,0 +1,11 @@
+framework module MtoPInterview {
+  umbrella header "MtoPInterview.h"
+
+  export *
+  module * { export * }
+}
+
+module MtoPInterview.Swift {
+    header "MtoPInterview-Swift.h"
+    requires objc
+}
